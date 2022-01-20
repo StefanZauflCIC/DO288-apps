@@ -1,5 +1,5 @@
 # Use the httpd-parent image as base
-FROM quay.io/stefan_zaufl_cic/do288-apache
+FROM quay.io/redhattraining/httpd-parent
 
 EXPOSE 8080
 
