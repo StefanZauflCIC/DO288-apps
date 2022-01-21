@@ -8,6 +8,7 @@ import java.net.InetAddress;
 
 @Path("/")
 public class ServerHostEndPoint {
+  private static final String APP_VERSION = "2.0";
 
   @GET
   @Produces("text/plain")
@@ -19,7 +20,7 @@ public class ServerHostEndPoint {
     catch (Exception e) {
        e.printStackTrace();
     }
-    String msg = "I am running on server "+host+" Version 1.0 \n";
+    String msg = String.format("I am running on server %s Version %s \n", host, APP_VERSION);
     return Response.ok(msg).build();
   }
 }
