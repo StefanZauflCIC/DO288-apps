@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "You are $DEVELOPER using $OPENSHIFT_BUILD_SOURCE for $OPENSHIFT_BUILD_NAMESPACE"
+
